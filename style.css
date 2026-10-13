@@ -79,7 +79,9 @@ main { padding: 0 24px 12vh; }
 
 .text { max-width: var(--measure); }
 /* 連續的文字段落：用一般段落間距，而不是區塊間距 */
-.text:has(+ .text) { margin-bottom: 1.1em; }
+.text:has(+ .text),
+.text:has(+ .pair > .prose:first-child),
+.text:has(+ .wide > .prose:first-child) { margin-bottom: 1.1em; }
 
 /* 時間標記 */
 .stamp {

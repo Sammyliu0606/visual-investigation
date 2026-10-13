@@ -64,23 +64,11 @@ window.STORY = {
     },
     {
       type: "media",
-      side: "left",
-      media: "media/clip-03.mp4",
-      credit: "（X @standwithfree",
-      text: "When Peng stepped out the museum at around 2pm and waving to the crowds, pro-CCP crowds started shouted “Warmly welcome (to the U.S.)”  cohesively."
-    },
-    {
-      type: "media",
-      side: "left",
-      media: "media/clip-03.mp4",
-      credit: "（X @standwithfree",
-      text: "When Peng stepped out the museum at around 2pm and waving to the crowds, pro-CCP crowds started shouted “Warmly welcome (to the U.S.)”  cohesively."
-    },
-    {
-      type: "media",
-      side: "left",
-      media: "media/clip-03.mp4",
-      credit: "（X @standwithfree",
+      side: "pair",
+      [
+        { media: "media/clip-03.mp4", credit: "X @standwithfree" },
+        { media: "media/clip-03-1", credit: "X @whyyoutouzhele" }
+      ],
       text: "When Peng stepped out the museum at around 2pm and waving to the crowds, pro-CCP crowds started shouted “Warmly welcome (to the U.S.)” cohesively. Still, some dissidents among the crowds tried to expressed their opposition to Xi Jinping. But many around them later moved not only to silence them but to attack them for what they said."
     },
     {

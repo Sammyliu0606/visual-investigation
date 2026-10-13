@@ -107,4 +107,5 @@ window.STORY = {
       media: "media/clip-03.mp4",
       credit: "（來源：監視器畫面）"
     }
+  ]
 };

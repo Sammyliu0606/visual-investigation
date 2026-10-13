@@ -28,15 +28,18 @@
 */
 
 window.STORY = {
-  title: "標題：這裡寫你的調查題目",
-  subtitle: "一句話說明這份調查想回答的問題。",
-  author: "你的名字",
-  updated: "2026 年 10 月 12 日更新",
+  title: "Pro-Beijing Groups Silenced and Attacked Protesters During Xi’s Washington Visit",
+  author: "Sammy Liu",
+  updated: "2026-10-12",
 
   blocks: [
     {
       type: "text",
-      text: "開場段落。說明事件背景：發生了什麼、在哪裡、為什麼值得調查。\n\n第二段。可以說明你使用了哪些素材，例如目擊者影片、監視器畫面、社群媒體貼文。"
+      text: "Protesters opposing the Chinese Communist Party were blocked, harassed and attacked in Washington DC during Chinese President Xi Jinping’s September visit."
+    },
+    {
+      type: "text",
+      text: "Those acted violence included pro-Beijing crowds, guards from a security firm contracted by the Chinese Embassy, and a pro-Beijing community leader with a documented history of organizing crowds that attack protesters during Xi’s visit in San Fransisco in 2023. Masked individuals carried out many of the most violent attacks, according to an analysis of more than 50 videos and social media posts, while non of them were arrested by the US police at the scene. At least one was filmed passing through a security checkpoint into an area the U.S. Secret Service had closed to the public."
     },
 
     { type: "heading", text: "第一部分：事件經過" },

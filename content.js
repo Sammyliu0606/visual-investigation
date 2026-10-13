@@ -28,9 +28,9 @@
 */
 
 window.STORY = {
-  title: "Pro-Beijing Groups Silenced and Attacked Protesters During Xi’s Washington Visit",
+  title: "Pro-Beijing groups silenced and attacked protesters during Xi’s D.C. visit",
   author: "Sammy Liu",
-  updated: "2026-10-12",
+  updated: "October 12, 2026",
 
   blocks: [
     {
@@ -41,8 +41,31 @@ window.STORY = {
       type: "text",
       text: "Those acted violence included pro-Beijing crowds, guards from a security firm contracted by the Chinese Embassy, and a pro-Beijing community leader with a documented history of organizing crowds that attack protesters during Xi’s visit in San Fransisco in 2023. Masked individuals carried out many of the most violent attacks, according to an analysis of more than 50 videos and social media posts, while non of them were arrested by the US police at the scene. At least one was filmed passing through a security checkpoint into an area the U.S. Secret Service had closed to the public."
     },
+    {
+      type: "text",
+      text: "Of several clashes between protesters and CCP supporters happened around the US Capital during Xi’s visit, the most extreme confrontations was on September 24, after Chinese First Lady Peng Liyuan ended her tour in the Smithsonian National Museum of Asian Art with Melania Trump."
+    },
+    {
+      type: "pair",
+      items: [
+        { media: "media/clip-01.mp4", credit: "APT" },
+        { media: "media/clip-01.mp4", credit: "ScarlettCa" }
+      ],
+      text: "When Peng was still touring the museum, the pro-CCP crowds directed by Chen Shanzhuan, a prominent leader in Chinese immigrants based in New York, were already gathered on Jefferson Dr. "
+    },
+    {
+      type: "pair",
+      items: [
+        { media: "media/12-3_X@LawrenceSellin.jpeg" },
+        { media: "media/12-2_X@LawrenceSellin.jpeg", credit: "LawrenceSellin" }
+      ],
+      text: "Chan has close ties to Beijing. In March 2024, he was the only American in a small group of overseas Chinese invited to China’s top political advisory body, The New York Times reported. The business and hometown associations he runs have organized multiple events in New York City attended by Chinese officials. He also helped organize crowds of supporters when Xi visited San Francisco in 2023."
+    },
 
-    { type: "heading", text: "第一部分：事件經過" },
+
+
+
+
 
     {
       type: "media",

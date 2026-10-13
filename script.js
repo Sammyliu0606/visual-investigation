@@ -128,16 +128,16 @@
     },
     wide(b) {
       const s = el("section", "block wide");
-      s.appendChild(figure(b));
       if (b.text) s.appendChild(prose(b.text));
+      s.appendChild(figure(b));
       return s;
     },
     pair(b) {
       const s = el("section", "block pair");
+      if (b.text) s.appendChild(prose(b.text));
       const row = el("div", "pair-row");
       (b.items || []).forEach(i => row.appendChild(figure(i)));
       s.appendChild(row);
-      if (b.text) s.appendChild(prose(b.text));
       return s;
     }
   };

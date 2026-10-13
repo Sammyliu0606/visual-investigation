@@ -148,7 +148,7 @@ video::cue {
 
 /* 滿版 */
 .wide .figure { max-width: 76rem; margin: 0 auto; }
-.wide .prose { max-width: var(--measure); margin: 2.4rem auto 0; }
+.wide .prose { max-width: var(--measure); margin: 0 auto 2.4rem; }
 
 /* 兩張並排 */
 .pair-row {
@@ -156,7 +156,7 @@ video::cue {
   grid-template-columns: 1fr 1fr;
   gap: 12px;
 }
-.pair .prose { max-width: var(--measure); margin: 2.4rem auto 0; }
+.pair .prose { max-width: var(--measure); margin: 0 auto 2.4rem; }
 
 .error {
   font-family: var(--sans);

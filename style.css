@@ -78,6 +78,8 @@ main { padding: 0 24px 12vh; }
 .prose p:last-child { margin-bottom: 0; }
 
 .text { max-width: var(--measure); }
+/* 連續的文字段落：用一般段落間距，而不是區塊間距 */
+.text:has(+ .text) { margin-bottom: 1.1em; }
 
 /* 時間標記 */
 .stamp {

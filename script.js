@@ -7,8 +7,8 @@
   document.title = S.title || document.title;
   setText("title", S.title);
   setText("subtitle", S.subtitle);
-  setText("byline", [S.author, S.updated].filter(Boolean).join("｜"));
-  setText("footer-note", S.author ? "製作：" + S.author : "");
+  setText("byline", [S.author, S.updated].filter(Boolean).join(" | "));
+  setText("footer-note", S.author ? "By " + S.author : "");
 
   function setText(id, value) {
     const el = document.getElementById(id);
@@ -56,14 +56,14 @@
         const t = document.createElement("track");
         t.kind = "subtitles";
         t.src = item.subtitles;
-        t.srclang = "zh-Hant";
-        t.label = "字幕";
+        t.srclang = "en";
+        t.label = "Subtitles";
         t.default = true;
         v.appendChild(t);
       }
       if (reduceMotion) v.controls = true;
       frame.appendChild(v);
-      frame.appendChild(soundButton(v));
+      if (item.sound !== false) frame.appendChild(soundButton(v));
       autoplay.observe(v);
     } else {
       const img = document.createElement("img");
@@ -78,18 +78,19 @@
   }
 
   function soundButton(video) {
-    const b = el("button", "sound", "開啟聲音");
+    const b = el("button", "sound", "Sound on");
     b.type = "button";
     b.addEventListener("click", () => {
       video.muted = !video.muted;
-      b.textContent = video.muted ? "開啟聲音" : "關閉聲音";
+      b.textContent = video.muted ? "Sound on" : "Sound off";
       b.setAttribute("aria-pressed", String(!video.muted));
       if (!video.muted) {
         // 一次只讓一支影片有聲音
         document.querySelectorAll("video").forEach(o => {
           if (o !== video && !o.muted) {
             o.muted = true;
-            o.parentElement.querySelector(".sound").textContent = "開啟聲音";
+            const ob = o.parentElement.querySelector(".sound");
+            if (ob) { ob.textContent = "Sound on"; ob.setAttribute("aria-pressed", "false"); }
           }
         });
         video.play().catch(() => {});
@@ -146,7 +147,7 @@
     const make = builders[b.type];
     if (!make) {
       story.appendChild(el("p", "block error",
-        `第 ${i + 1} 段的 type「${b.type}」無法辨識。可用的類型：heading、text、media、wide、pair。`));
+        `Block ${i + 1}: unknown type "${b.type}". Use heading, text, media, wide or pair.`));
       return;
     }
     story.appendChild(make(b));

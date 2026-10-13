@@ -1,0 +1,189 @@
+/* 想改顏色或字型，改這裡的變數就好 */
+:root {
+  --paper: #fafaf8;
+  --ink: #1c232c;
+  --muted: #646b75;
+  --rule: #d9dce0;
+  --mark: #b3261e;            /* 時間標記的顏色 */
+  --frame: #e9ebee;
+  --serif: "Noto Serif TC", "Songti TC", serif;
+  --sans: "Noto Sans TC", "PingFang TC", system-ui, sans-serif;
+  --measure: 40rem;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --paper: #15191e;
+    --ink: #e6e8eb;
+    --muted: #9aa1ab;
+    --rule: #2c333b;
+    --mark: #ff7a70;
+    --frame: #222830;
+  }
+}
+
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--serif);
+  font-size: 19px;
+  line-height: 1.85;
+}
+
+.masthead {
+  max-width: 46rem;
+  margin: 0 auto;
+  padding: 18vh 24px 10vh;
+}
+.masthead h1 {
+  font-weight: 900;
+  font-size: clamp(2rem, 5.5vw, 3.4rem);
+  line-height: 1.25;
+  margin: 0 0 1.2rem;
+  letter-spacing: 0.01em;
+}
+.dek {
+  font-size: 1.2rem;
+  line-height: 1.7;
+  color: var(--muted);
+  margin: 0 0 2rem;
+}
+.byline {
+  font-family: var(--sans);
+  font-size: 0.85rem;
+  color: var(--muted);
+  border-top: 1px solid var(--rule);
+  padding-top: 0.9rem;
+  margin: 0;
+}
+
+main { padding: 0 24px 12vh; }
+
+.block {
+  max-width: 76rem;
+  margin: 0 auto 14vh;
+}
+
+.section-head {
+  max-width: var(--measure);
+  margin: 0 auto 8vh;
+  font-size: 1.6rem;
+  font-weight: 900;
+  line-height: 1.4;
+}
+
+.prose p { margin: 0 0 1.1em; }
+.prose p:last-child { margin-bottom: 0; }
+
+.text { max-width: var(--measure); }
+
+/* 時間標記 */
+.stamp {
+  font-family: var(--sans);
+  font-weight: 700;
+  font-size: 0.8rem;
+  font-variant-numeric: tabular-nums;
+  color: var(--mark);
+  margin: 0 0 0.6rem;
+}
+
+/* 影片 + 文字，左右交錯 */
+.media {
+  display: grid;
+  grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr);
+  gap: clamp(28px, 5vw, 72px);
+  align-items: center;
+}
+.media-right .figure { order: 2; }
+.media-right .aside { order: 1; }
+.aside { max-width: 26em; }
+.media-left .aside { justify-self: start; }
+.media-right .aside { justify-self: end; }
+
+.figure { margin: 0; }
+.frame {
+  position: relative;
+  background: var(--frame);
+  line-height: 0;
+}
+.frame video,
+.frame img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+figcaption {
+  font-family: var(--sans);
+  font-size: 0.8rem;
+  line-height: 1.5;
+  color: var(--muted);
+  margin-top: 0.55rem;
+}
+
+/* 聲音按鈕 */
+.sound {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  font: 500 0.75rem/1 var(--sans);
+  color: #fff;
+  background: rgba(0, 0, 0, 0.55);
+  border: 0;
+  border-radius: 3px;
+  padding: 7px 10px;
+  cursor: pointer;
+  opacity: 0.85;
+}
+.sound:hover, .sound:focus-visible { opacity: 1; }
+.sound:focus-visible { outline: 2px solid #fff; outline-offset: 2px; }
+
+/* 字幕樣式 */
+video::cue {
+  font-family: var(--sans);
+  font-weight: 700;
+  background: rgba(0, 0, 0, 0.55);
+}
+
+/* 滿版 */
+.wide .figure { max-width: 76rem; margin: 0 auto; }
+.wide .prose { max-width: var(--measure); margin: 2.4rem auto 0; }
+
+/* 兩張並排 */
+.pair-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+.pair .prose { max-width: var(--measure); margin: 2.4rem auto 0; }
+
+.error {
+  font-family: var(--sans);
+  color: var(--mark);
+  border: 1px solid var(--mark);
+  padding: 1rem;
+  max-width: var(--measure);
+}
+
+.colophon {
+  max-width: var(--measure);
+  margin: 0 auto;
+  padding: 2rem 24px 4rem;
+  border-top: 1px solid var(--rule);
+  font-family: var(--sans);
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+
+/* 手機：改成上下排列 */
+@media (max-width: 760px) {
+  body { font-size: 17px; }
+  main { padding: 0 16px 10vh; }
+  .masthead { padding: 12vh 16px 8vh; }
+  .block { margin-bottom: 10vh; }
+  .media { grid-template-columns: 1fr; gap: 20px; }
+  .media-right .figure, .media-right .aside { order: 0; }
+  .aside, .media-right .aside { max-width: none; justify-self: stretch; }
+  .pair-row { grid-template-columns: 1fr; }
+}

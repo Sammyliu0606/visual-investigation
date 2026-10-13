@@ -72,6 +72,7 @@ main { padding: 0 24px 12vh; }
   font-size: 1.6rem;
   font-weight: 900;
   line-height: 1.4;
+  text-align: center;
 }
 
 .prose p { margin: 0 0 1.1em; }
@@ -156,10 +157,12 @@ video::cue {
 
 /* 兩張並排 */
 .pair-row {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  align-items: flex-start;
   gap: 12px;
 }
+/* 寬度依長寬比分配，兩邊就會一樣高 */
+.pair-row .figure { flex: var(--ratio, 1) 1 0; min-width: 0; }
 .pair .prose { max-width: var(--measure); margin: 0 auto 2.4rem; }
 
 .error {
@@ -189,5 +192,6 @@ video::cue {
   .media { grid-template-columns: 1fr; gap: 20px; }
   .media-right .figure, .media-right .aside { order: 0; }
   .aside, .media-right .aside { max-width: none; justify-self: stretch; }
-  .pair-row { grid-template-columns: 1fr; }
+  .pair-row { flex-direction: column; align-items: stretch; }
+  .pair-row .figure { flex: none; }
 }

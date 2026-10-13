@@ -68,7 +68,7 @@ window.STORY = {
         { media: "media/clip-03.mp4", credit: "X @standwithfree" },
         { media: "media/clip-03-1.mp4", credit: "X @whyyoutouzhele" }
       ],
-      text: "When Peng stepped out the museum at around 2pm and waving to the crowds, pro-CCP crowds started shouted “Warmly welcome (to the U.S.)” cohesively. Still, some dissidents among the crowds tried to expressed their opposition to Xi Jinping. But many around them later moved not only to silence them but to attack them for what they said."
+      text: "When Peng stepped out the museum at around 2pm and waved to the crowds, pro-CCP supporters began chanting “Warmly welcome (to the U.S.)” together. Still, some dissidents among the crowds tried to expressed their opposition to Xi Jinping. One protester loudly shouted, “Xi Jinping is a devil!” But many around them soon moved not only to silence them but to attack them for what they said."
     },
     {
       type: "heading",
@@ -90,10 +90,39 @@ window.STORY = {
     },
     {
       type: "media",
-      side: "left",
+      side: "right",
       media: "media/clip-06.mp4",
-      credit: "",
+      credit: "X @standwithfree, @whyyoutouzhele, @ScarlettCa",
+      text: "At the same time, two masked individuals opened their black umbrellas between Peng and the protesters, apparently to keep her from seeing them."
+    },
+    {
+      type: "media",
+      side: "left",
+      media: "media/clip-07.mp4",
+      credit: "X @whyyoutouzhele, @ScarlettCa",
       text: "When another protester, Xinzhan Dong, raised a banner reading “Xi Jinping, step down! Chinese Communist Party, step down!”, at least four masked individuals rushed up from behind, and one of them wielding a large closed black umbrella like a baton. At the same moment, a pro-CCP individual tore the banner from his hands."
+    },
+    {
+      type: "media",
+      side: "left",
+      media: "media/clip-08.mp4",
+      credit: "X @whyyoutouzhele, @ScarlettCa",
+      text: "Guanjun Geng, standing besides Dong, grabbed the umbrella’s tip as it was jabbed toward them and struggled with the masked individual for control of it. Soon, he was carried away by the ICS police to the back of the crowd and was thrown to the ground."
+    },
+    {
+      type: "pair",
+      items: [
+        { media: "media/07-1_X@SomeCharlieBear.png", credit: "X @SomeCharlieBear" },
+        { media: "media/clip-09.mp4", credit: "X @JenniferZeng15" }
+      ],
+      text: "The black umbrella resembles a design in a Chinese patent for a multifunctional anti-riot umbrella intended for police use. It can be a baton when closed and its canopy shields against knives, sticks and stones when opened. The umbrella also includes a tear gas in the handle. Plainclothes police around Tiananmen Square have been seen carrying similar umbrellas."
+    },
+    {
+      type: "media",
+      side: "left",
+      media: "media/clip-10.mp4",
+      credit: "X ",
+      text: "Pengfei Niu came forward to the conflict, but was soon beaten by another masked individuals and dragged by three to the back of the crowds violently. Niu was pushed on the ground in front of the US Park Police."
     },
 
 

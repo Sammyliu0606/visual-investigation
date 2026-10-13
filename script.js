@@ -62,6 +62,7 @@
         v.appendChild(t);
       }
       if (reduceMotion) v.controls = true;
+      v.addEventListener("loadedmetadata", () => setRatio(fig, v.videoWidth, v.videoHeight));
       frame.appendChild(v);
       if (item.sound !== false) frame.appendChild(soundButton(v));
       autoplay.observe(v);
@@ -70,11 +71,17 @@
       img.src = item.media;
       img.alt = item.alt || item.credit || "";
       img.loading = "lazy";
+      img.addEventListener("load", () => setRatio(fig, img.naturalWidth, img.naturalHeight));
       frame.appendChild(img);
     }
     fig.appendChild(frame);
     if (item.credit) fig.appendChild(el("figcaption", null, item.credit));
     return fig;
+  }
+
+  // 記下長寬比，讓並排的影片／照片等高、不變形
+  function setRatio(fig, w, h) {
+    if (w && h) fig.style.setProperty("--ratio", w / h);
   }
 
   function soundButton(video) {

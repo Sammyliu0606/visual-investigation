@@ -63,11 +63,10 @@ window.STORY = {
       text: "Chan has close ties to Beijing. In March 2024, he was the only American in a small group of overseas Chinese invited to China’s top political advisory body, The New York Times reported. The business and hometown associations he runs have organized multiple events in New York City attended by Chinese officials. He also helped organize crowds of supporters when Xi visited San Francisco in 2023."
     },
     {
-      type: "media",
-      side: "pair",
-      [
+      type: "pair",
+      items: [
         { media: "media/clip-03.mp4", credit: "X @standwithfree" },
-        { media: "media/clip-03-1", credit: "X @whyyoutouzhele" }
+        { media: "media/clip-03-1.mp4", credit: "X @whyyoutouzhele" }
       ],
       text: "When Peng stepped out the museum at around 2pm and waving to the crowds, pro-CCP crowds started shouted “Warmly welcome (to the U.S.)” cohesively. Still, some dissidents among the crowds tried to expressed their opposition to Xi Jinping. But many around them later moved not only to silence them but to attack them for what they said."
     },
@@ -104,45 +103,8 @@ window.STORY = {
 
 
     {
-      type: "media",
-      side: "left",
-      media: "media/clip-01.mp4",
-      subtitles: "media/clip-01.vtt",
-      credit: "（來源：目擊者提供）",
-      date: "14:32:05",
-      text: "這段文字會出現在影片旁邊。描述這支影片裡看到什麼，以及它在整個時間軸上的位置。"
-    },
-
-    {
-      type: "media",
-      side: "right",
-      media: "media/clip-02.mp4",
-      credit: "（來源：社群媒體）",
-      date: "14:32:40",
-      text: "下一段影片換到右邊。標注（圈人、反黑、說話者字幕）建議在 Premiere 裡先做好再輸出。"
-    },
-
-    {
       type: "wide",
       media: "media/clip-03.mp4",
       credit: "（來源：監視器畫面）"
-    },
-
-    {
-      type: "pair",
-      items: [
-        { media: "media/clip-01.mp4", credit: "角度 A" },
-        { media: "media/photo-01.jpg", credit: "角度 B" }
-      ],
-      text: "兩個角度並排比對，適合呈現同一時間、不同來源的畫面。"
-    },
-
-    { type: "heading", text: "第二部分：目前進度" },
-
-    {
-      type: "text",
-      date: "10 月 12 日",
-      text: "這裡可以寫調查進度：已經確認了什麼、還在查證什麼、下一步打算做什麼。"
     }
-  ]
 };

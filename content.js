@@ -90,7 +90,7 @@ window.STORY = {
     },
     {
       type: "media",
-      side: "right",
+      side: "left",
       media: "media/clip-06.mp4",
       credit: "X @standwithfree, @whyyoutouzhele, @ScarlettCa",
       text: "At the same time, two masked individuals opened their black umbrellas between Peng and the protesters, apparently to keep her from seeing them."
@@ -121,8 +121,47 @@ window.STORY = {
       type: "media",
       side: "left",
       media: "media/clip-10.mp4",
-      credit: "X ",
+      credit: "X @whyyoutouzhele, @standwithfree",
       text: "Pengfei Niu came forward to the conflict, but was soon beaten by another masked individuals and dragged by three to the back of the crowds violently. Niu was pushed on the ground in front of the US Park Police."
+    },
+    {
+      type: "heading",
+      text: "Targeted attacks"
+    },
+    {
+      type: "text",
+      text: "Amid the clashes, a masked woman pepper-sprayed four protesters at different times and places. Each time, she walked straight toward her target, sprayed them in the face and was gone within two seconds. All four were members of the Democratic Party of China, a group founded by dissidents and banned by the Chinese Communist Party."
+    },
+    {
+      type: "pair",
+      items: [
+        { media: "media/clip-11.mp4", credit: "X @whyyoutouzhele" },
+        { media: "media/08-2_X@MinMin89485072.jpeg", credit: "X @MinMin89485072" }
+      ],
+      text: "The first was Mingfa Huang, who joined the party in Los Angeles in 2023 and has been active in the pro-democracy movement. The woman rushed up from behind him, sprayed him at least three times from two angles and ran off."
+    },
+    {
+      type: "pair",
+      items: [
+        { media: "media/clip-12.mp4", credit: "X @whyyoutouzhele" },
+        { media: "media/clip-13.mp4", credit: "X @MinMin89485072" }
+      ],
+      text: "Seconds later, she walked straight up to Guanjun Geng, an active member of the party’s Los Angeles branch. Geng had just been thrown to the ground by a guard from ICS, the security firm contracted by the Chinese Embassy. The woman crouched down, sprayed him and left. U.S. Park Police officers were only steps away."
+    },
+    {
+      type: "pair",
+      items: [
+        { media: "media/clip-14.mp4", credit: "X @whyyoutouzhele" },
+        { media: "media/clip-15.mp4", credit: "X @MinMin89485072" }
+      ],
+      text: "Seconds later, she walked straight up to Guanjun Geng, an active member of the party’s Los Angeles branch. Geng had just been thrown to the ground by a guard from ICS, the security firm contracted by the Chinese Embassy. The woman crouched down, sprayed him and left. U.S. Park Police officers were only steps away."
+    },
+    {
+      type: "pair",
+      items: [
+        { media: "media/08-4_X@MinMin89485072.jpeg", credit: "X @MinMin89485072" },
+        { media: "media/Screenshot 2026-10-13 at 10.22.40 PM.png4", credit: "X @MinMin89485072" }
+      ],
     },
 
 

@@ -160,20 +160,27 @@ window.STORY = {
       type: "pair",
       items: [
         { media: "media/08-4_X@MinMin89485072.jpeg", credit: "X @MinMin89485072" },
-        { media: "media/Screenshot 2026-10-13 at 10.22.40 PM.png4", credit: "X @MinMin89485072" }
+        { media: "media/Screenshot 2026-10-13 at 10.22.40 PM.png", credit: "X @MinMin89485072" }
       ],
+      text: "US Park Police, MPD and USSS all said they didn’t make any arrest during the conflict and USPP said “no one was able to identify the suspect who used the pepper spray when USPP arrived on scene.”"
     },
-
-
-
-
-
-
-
     {
-      type: "wide",
-      media: "media/clip-03.mp4",
-      credit: "（來源：監視器畫面）"
+      type: "pair",
+      items: [
+        { media: "media/64_X@jenniferzeng97.jpeg", credit: "X @jenniferzeng97" },
+        { media: "media/clip-16.mp4", credit: "X @jenniferzeng97" },
+        {media: "media/clip-17.mp4", credit: "X @dayutalk" }
+      ],
+      text:"Masked individuals dressed exactly like those in this confrontation — khaki baseball caps, sunglasses, black masks and dark jackets — appeared in large numbers on Washington streets during Xi’s visit. They wore no visible badges or identification but videos show them patrolling around protest sites across Washington DC and filming protesters’ faces up close, and in this confrontation, they used force to silence protesters and picked out some of them to attack."
+    },
+    {
+      type: "pair",
+      items: [
+        { media: "media/clip-18.mp4", credit: "X @muyang" },
+        { media: "media/65-2_X@HPizheng.jpeg", credit: "X @HPizheng" },
+        {media: "media/65_X@HPizheng11983 2.jpeg", credit: "X @dHPizheng" }
+      ],
+      text:"Masked individuals dressed exactly like those in this confrontation — khaki baseball caps, sunglasses, black masks and dark jackets — appeared in large numbers on Washington streets during Xi’s visit. They wore no visible badges or identification but videos show them patrolling around protest sites across Washington DC and filming protesters’ faces up close, and in this confrontation, they used force to silence protesters and picked out some of them to attack."
     }
   ]
 };

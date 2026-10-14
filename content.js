@@ -165,6 +165,10 @@ window.STORY = {
       text: "US Park Police, MPD and USSS all said they didn’t make any arrest during the conflict and USPP said “no one was able to identify the suspect who used the pepper spray when USPP arrived on scene.”"
     },
     {
+      type: "heading",
+      text: "Masked individuals"
+    },
+    {
       type: "pair",
       items: [
         { media: "media/64_X@jenniferzeng97.jpeg", credit: "X @jenniferzeng97" },
@@ -180,7 +184,7 @@ window.STORY = {
         { media: "media/65-2_X@HPizheng.jpeg", credit: "X @HPizheng" },
         {media: "media/65_X@HPizheng11983 2.jpeg", credit: "X @dHPizheng" }
       ],
-      text:"Masked individuals dressed exactly like those in this confrontation — khaki baseball caps, sunglasses, black masks and dark jackets — appeared in large numbers on Washington streets during Xi’s visit. They wore no visible badges or identification but videos show them patrolling around protest sites across Washington DC and filming protesters’ faces up close, and in this confrontation, they used force to silence protesters and picked out some of them to attack."
+      text:"There are signs these masked individuals were not acting alone. A video shows a group of them filing into an area on Constitution Avenue that the Secret Service had closed to the public. The Secret Service said the sidewalks around the Waldorf Astoria “were closed during this visit” and that “some pedestrians may have been prompted to provide proof of residency or work to access areas around this site.” A photo taken during the confrontation shows the masked woman who used pepper spray talking with a ICS guard. Another photo shows her leaving the scene escorted by other masked individuals."
     }
   ]
 };

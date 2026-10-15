@@ -154,7 +154,7 @@ window.STORY = {
         { media: "media/clip-14.mp4", credit: "X @whyyoutouzhele" },
         { media: "media/clip-15.mp4", credit: "X @MinMin89485072" }
       ],
-      text: "Seconds later, she walked straight up to Guanjun Geng, an active member of the party’s Los Angeles branch. Geng had just been thrown to the ground by a guard from ICS, the security firm contracted by the Chinese Embassy. The woman crouched down, sprayed him and left. U.S. Park Police officers were only steps away."
+      text: "She then went straight for Pizheng Hu and, finally, Jianxin Guo, both members of the party’s San Francisco branch."
     },
     {
       type: "pair",
